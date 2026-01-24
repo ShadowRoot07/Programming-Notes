@@ -42,7 +42,7 @@ Normalmente el proceso tiene dos pasos:
 Ejemplo de funcion de validacion simple:
 
 ```python 
-from fastapi.security import OAuth2PasswordBearerForm
+from fastapi.security import OAuth2PasswordRequestForm
 
 @app.post("/token")
 def login(form_data: OAuth2PasswordBearerForm= Depends()):
